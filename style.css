@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo:hover {
+    transform: none;
+    transition: none;
+}
+
+header .container_barraDePesquisa {
+    padding: 10px;
+}
+
+.container_barraDePesquisa form {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+h1 {
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 10px;
+    animation: floating 3s ease-in-out infinite;
+}
+
+h1:hover {
+    background-color: #000;
+    color: #fff;
+    transition: 1s ease-in-out;
+
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    width: 950px;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.flex-container img {
+    max-width: 90%;
+    position: relative;
+    border-radius: 10px;
+}
+
+img:hover {
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    flex: 0 1 250px;
+    padding: 5px;
+}
+
+.coluna h2 {
+    margin: 13px 0 0 0 ;
+}
+
+.coluna p {
+    margin: 10px 0 10px 0;
+}
+
+.botao {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.container_redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 700px;
+}
+
+.container_redes .icon {
+    font-size: 30px;
+    color: #000000;
+}
+
+.icon:hover {
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 20%;
+    padding: 4px;
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+}
+
+
+@keyframes floating {
+    0% {
+        transform: translateY(0%);
+    }
+    
+    50% { 
+        transform: translateY(-15%);        
+    }
+
+
+    100% {
+        transform: translateY(0%);
+    }
+}
